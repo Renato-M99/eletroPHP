@@ -1,0 +1,72 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hardware</title>
+    <link rel="stylesheet" href="./styles/layout.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center mt-3">Escolha a categoria de Eletrônico:</h1>
+       
+            <ul class="list-product">
+                <li class="list-product-item ">
+                    <span class="deskIcon"></span>
+                    <a href="?page=desktop">Desktops</a>
+                </li>
+                <li class="list-product-item ">
+                    <span class="deskIcon"></span>
+                    <a href="?page=notebook">Notebooks</a>
+                </li>
+                <li class="list-product-item">
+                    <span class="deskIcon"></span>
+                    <a href="?page=celular">Celulares</a>
+                </li>
+                <li class="list-product-item">
+                    <span class="deskIcon"></span>
+                    <a href="?page=tv">Televisões</a>
+                </li>
+            </ul>
+
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <?php
+                        $page = isset($_GET['page']) ? $_GET['page']:'desktop';
+                       
+                        switch($page){
+                            case 'desktop': 
+                                include 'desktop.php';
+                                break;
+                            case 'notebook': 
+                                include 'notebook.php';
+                                break;
+                            case 'celular': 
+                                include 'celular.php';
+                                break;   
+                            case 'tv': 
+                                include 'tv.php';
+                                break;   
+                            
+                        }
+                    ?>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
