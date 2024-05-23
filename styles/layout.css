@@ -1,30 +1,57 @@
 body{
     background: url(../img/bck.jpg);
-}
+} 
 .container{
     max-width: 1200px;
     margin: 0 auto;
+    
 }
 h1, h2{
-    color: white;
+    color: rgb(13, 230, 238);
     padding-bottom: 42px;
     text-align: center;
     font-weight: bolder;
 }
+h1{
+    padding-top: 32px;
+    font-size: 2.5rem;
+    
+}
+/* h1{
+    background: linear-gradient(to left, #F4D400,#A3992F,#d1bc00, #F5DC0B, #A3992F);
+    background-clip: text;
+    display: inline;
+    color: transparent;
+    animation: animated 5s linear infinite;
+}
+@keyframes animated{
+    to {background-position-x: 200px};
+} */
 h2{
     padding-top: 24px;
     background: rgba(128, 128, 128, 0.342);
     border-radius: 5px;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 2.5rem;
+    
+   
 }
 h3{
     font-weight: bolder;
     padding-top: 24px;
-    color: white;
+    color: rgb(26, 149, 98);
     padding-bottom: 24px;
+    font-size: 2rem;
 }
 p{
     font-style: italic;
-    color: gray;
+    color: rgb(30, 177, 133);
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 a{
     text-decoration: none;
@@ -36,6 +63,18 @@ img{
     border-radius: 15px;
     
 }
+.mb-4,  .mt-3{
+    background: linear-gradient(to left, #2F27F2,#B427F2,#F227EA, #275FF2, #F227EA, #275FF2);
+    background-clip: text;
+    display: inline;
+    color: transparent;
+    animation: animated 5s linear infinite;
+    display: flex;
+    justify-content: center;
+}
+@keyframes animated{
+    to {background-position-x: 200px};
+}
 
 .list-product{
     display: flex;
@@ -44,9 +83,11 @@ img{
     list-style-type: none;
     padding-bottom: 24px;
     font-weight: bold;
+
+    
 }
 .list-product li a{
-    background-color: grey;
+    background-color: rgb(64, 99, 214);
     color: white;
     padding: 20px;
     border-radius: 15px;
@@ -56,10 +97,11 @@ img{
     
     
 }
+
 .list-product-item a:hover{
     background-color: white;
-    color: grey;
-    border: solid 1px blue;
+    color: rgb(33, 8, 255);
+    border: solid 2px blue;
 }
 .list-product:has(.list-product-item:hover) .list-product-item:not(:hover){
         scale: 0.8;
@@ -77,8 +119,9 @@ img{
     border: solid 2px rgb(104, 95, 95);
     border-radius: 5px;
     list-style-type: none;
-    margin-top: 6rem;
+    padding-top: 24px;
     padding-bottom: 120px;
+    background: linear-gradient(to right, #032e72, #1740c7, #173b74,#032e72);
     
 }
 
@@ -88,12 +131,17 @@ img{
     align-items: center;
     justify-content: center;
     width: 512px;
-    border: 1px solid rgb(233, 231, 231);
+    border: 2px solid rgb(46, 161, 161);
     border-radius: 15px;
     margin-top: 2%;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: -3px 3px 3px 1px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+    padding: 28px;
+    background: url(../img/adsBack.jpg);
+    
 }
 .item:hover{
-    box-shadow: 2px 2px 2px 10px rgba(13, 65, 97, 0.2);
+    box-shadow: 2px 2px 2px 10px rgba(6, 155, 182, 0.2);
+    border: 2px solid #032e72;
 }
+
